@@ -1,6 +1,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+}
+
+.myNav {
+    /* font-size: 12px; */
 }
 
 .firstSection {
@@ -72,21 +76,75 @@ a.mainBtn {
     display: flex;
     flex-direction: column;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
-@media only screen and (min-width: 1280px) {
+.storyOne {
+    display: flex;
 }
 
-@media only screen and (min-width: 992px) {
-
+.textStoryOne {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    letter-spacing: 1px;
 }
 
-@media only screen and (min-width: 768px) {
-
+.storyTwo {
+    display: flex;
 }
 
-@media only screen and (min-width: 600px) {
+.textStoryTwo {
+    width: 30%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.imageStoryTwo {
+    width: 70%;
+    height: 435px;
+    background-image: url(/asset/rockpaperstrategy-1600.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ThirdSecsion */
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 992px) {
+    .textStoryTwo {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .storyTwo {
+        flex-direction: column;
+    }
+
+    .textStoryTwo {
+        width: 100%;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .imageStoryTwo {
+        width: 100%;
+        height: 435px;
+        background-image: url(/asset/rockpaperstrategy-1600.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
 }
 
