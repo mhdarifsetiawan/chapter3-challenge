@@ -6,14 +6,21 @@
     <title>Chapter3 Challenge - Binar Academy</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
       <!-- First Section -->
-    <div class="first-section">
-        <div class="mynav">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="firstSection">
+        <div class="mynav fixed-top">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top opacity-75">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="/">Navbar</a>
+                  <a class="navbar-brand" href="/">LOGO</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -44,9 +51,30 @@
                 </div>
               </nav>
         </div>
+        <div class="contentTop">
+            <div class="mainTitle">
+                <p class="mainH1">play traditional game</p>
+                <p class="subText text-capitalize">Experience new traditional game play</p>
+                <p class="mainButton">
+                    <a href="#" class="mainBtn btn btn-warning">play now</a>
+                </p>
+            </div>
+            <div class="gambarSvg">
+                <div class="theStory">The Story</div>
+                <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.5786 1.83362H1.32422L11.338 10.0027L21.5786 1.83362Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </div>
+        </div>
     </div>
     <!-- Second Section -->
-    <div></div>
+    <div class="secondSection">
+        <div class="contentStory">
+            <div class="textStoryOne">What's so special?</div>
+            <div class="textStoryTwo">the games</div>
+            <div class="imageStoryOne">the games</div>
+        </div>
+    </div>
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
