@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+    color: white;
 }
 
 /* font/text */
@@ -120,6 +121,67 @@ a.mainBtn {
 /* section kelima */
 .sectionWrap5 {
     background-image: url(/asset/top-score-bg.png);
+}
+
+.topScoreWrap1, .topScoreWrap2, .topScoreWrap3 {
+    margin-top: 15px;
+}
+
+.topScoreWrap {
+    /* display: flex; */
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.topScoreLine1, .topScoreLine2 {
+    display: flex;
+    width: 100%;
+}
+
+.topScoreLine2 {
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.topScorePoto {
+    width: auto;
+}
+
+.topScoreImg {
+    width: 50px;
+}
+
+.topScoreName {
+    width: auto;
+    margin-left: 20px;
+}
+
+.topScoreName .name {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 174, 0);
+}
+
+.topScoreName .profesi {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(138, 138, 138);
+    font-size: 14px
+}
+
+.topScoreTesti {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.topScoreDate {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: rgb(138, 138, 138);
+    margin-top: 5px
 }
 /* end section kelima */
 
