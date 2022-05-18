@@ -3,19 +3,61 @@ body {
     font-size: 12px;
 }
 
-.myNav {
-    /* font-size: 12px; */
+/* font/text */
+.h1Main {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 5px;
 }
 
-.firstSection {
+.h2Text, .h3Text, .subText {
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: bold; */
+}
+
+.h2Text {
+    color: white;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.h3Text {
+    color: rgb(255, 174, 0);
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.subText {
+    /* font-family: 'Open Sans', sans-serif; */
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/* end font/text */
+
+/* Section Wrapper */
+.sectionWrap {
     display: flex;
     width: 100%;
-    min-height: 100vh;
-    background-image: url(/asset/main-bg.jpg);
+    height: 100vh;
     background-color: rgba(20,20,20,.8);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+/* End section wrapper */
+
+.myNav {
+    /* font-size: 12px; */
+}
+
+/* section kesatu */
+.sectionWrap1 {
+    background-image: url(/asset/main-bg.jpg);
 }
 
 .contentTop {
@@ -25,19 +67,7 @@ body {
     text-align: center;
 }
 
-.mainH1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 80px;
-    color: white;
-    letter-spacing: 5px;
-}
 
-.subText {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
 
 .mainButton {
     width: 25%;
@@ -58,71 +88,41 @@ a.mainBtn {
     font-weight: bold;
     padding-top: 100px;
 }
+/* end section kesatu */
 
-/* SecondSection */
-
-.secondSection {
-    display: flex;
-    width: 100%;
-    height: 100vh;
+/* section kedua */
+.sectionWrap2 {
     background-image: url(/asset/the-games-bg.jpg);
-    background-color: rgba(20,20,20,.8);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.contentStory {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    /* text-align: center; */
-}
-
-.storyOne {
-    display: flex;
-}
-
-.textStoryOne {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    letter-spacing: 1px;
-}
-
-.storyTwo {
-    display: flex;
-}
-
-.textStoryTwo {
-    width: 30%;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .imageStoryTwo {
-    width: 70%;
+    width: 100%;
     height: 435px;
     background-image: url(/asset/rockpaperstrategy-1600.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+/* end section kedua */
 
-/* ThirdSecsion */
-
-.thirdSection {
-    /* display: flex; */
-    width: 100%;
-    height: auto;
+/* section ketiga */
+.sectionWrap3 {
     background-image: url(/asset/features.jpg);
-    background-color: rgba(20,20,20,.8);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
+/* end section ketiga */
+
+/* Section keempat */
+.sectionWrap4 {
+    background-image: url(/asset/requirements.png);
+}
+/* End section keempat */
+
+/* section kelima */
+.sectionWrap5 {
+    background-image: url(/asset/top-score-bg.png);
+}
+/* end section kelima */
+
 
 @media only screen and (max-width: 1280px) {
 }
