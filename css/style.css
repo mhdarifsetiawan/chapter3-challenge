@@ -1,226 +1,240 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    color: white;
+/* ======================
+======== GENERAL ========
+======================= */
+html, body, footer {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  html, body, header, main,
+  h1, h2, h3, h4, h5, h6, hr,
+  ol, ul, li, a, div, span, p, button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li, ol, ul, a {
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(247, 247, 247);
+    text-decoration: none;
 }
 
-/* font/text */
-.h1Main {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 80px;
-    color: white;
-    letter-spacing: 5px;
-}
-
-.h2Text, .h3Text, .subText {
-    font-family: 'Open Sans', sans-serif;
-    /* font-weight: bold; */
-}
-
-.h2Text {
-    color: white;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-size: 36px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.h3Text {
-    color: rgb(255, 174, 0);
-    font-size: 24px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.subText {
-    /* font-family: 'Open Sans', sans-serif; */
-    color: white;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-/* end font/text */
-
-/* Section Wrapper */
-.sectionWrap {
+.btn {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 8.635rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.75s ease-in-out;
+}
+
+/* ======================
+======== HEADER ========
+======================= */
+
+
+/* ======================
+======== MAIN ========
+======================= */
+section.intro {
     height: 100vh;
-    background-color: rgba(20,20,20,.8);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-/* End section wrapper */
-
-.myNav {
-    /* font-size: 12px; */
+    padding: 0;
+    position: relative;
 }
 
-/* section kesatu */
-.sectionWrap1 {
+.container-info {
+    width: 100%;
+    max-width: inherit;
+    margin-top: 40vh;
+    position: absolute;
+}
+
+.intro::before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* border-bottom-left-radius: 5.875rem; */
+    background: linear-gradient(0, #ff3d54, #ff8f70);
+}
+
+.intro {
+    position: relative;
+    /* border-bottom-left-radius: 5.875rem; */
+    padding-top: 10rem;
+    /* background-image: url(/images/bg-pattern-intro.svg); */
     background-image: url(/asset/main-bg.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 350%; */
+    background-size: cover;
+    background-position: 35% 40%;
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
 }
 
-.contentTop {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+.intro-title {
+    margin-bottom: 1.5rem;
+    font-size: 2.225rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro-info {
+    margin-bottom: 3rem;
+    font-size: 1.175rem;
+    font-weight: 300;
+    line-height: 1.45rem;
     text-align: center;
 }
 
-
-
-.mainButton {
-    width: 25%;
-    margin: auto;
-}
-
-a.mainBtn {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.theStory {
-    font-size: 12px;
-    color: white;
-    font-weight: bold;
-    padding-top: 100px;
-}
-/* end section kesatu */
-
-/* section kedua */
-.sectionWrap2 {
-    background-image: url(/asset/the-games-bg.jpg);
-}
-
-.imageStoryTwo {
-    width: 100%;
-    height: 435px;
-    background-image: url(/asset/rockpaperstrategy-1600.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-/* end section kedua */
-
-/* section ketiga */
-.sectionWrap3 {
-    background-image: url(/asset/features.jpg);
-}
-/* end section ketiga */
-
-/* Section keempat */
-.sectionWrap4 {
-    background-image: url(/asset/requirements.png);
-}
-/* End section keempat */
-
-/* section kelima */
-.sectionWrap5 {
-    background-image: url(/asset/top-score-bg.png);
-}
-
-.topScoreWrap1, .topScoreWrap2, .topScoreWrap3 {
-    margin-top: 15px;
-}
-
-.topScoreWrap {
-    /* display: flex; */
-    width: 100%;
-    background-color: rgb(37, 37, 37);
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.topScoreLine1, .topScoreLine2 {
+.intro-cta {
     display: flex;
-    width: 100%;
+    max-width: 20.5rem;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 9.6875rem;
+    margin: 0 auto;
+    font-size: 1.175rem;
 }
 
-.topScoreLine2 {
-    flex-direction: column;
-    margin-top: 15px;
+.intro-cta-start {
+    background: #f39d32;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    transition: all 0.75s ease-in-out;
 }
 
-.topScorePoto {
-    width: auto;
-}
-
-.topScoreImg {
-    width: 50px;
-}
-
-.topScoreName {
-    width: auto;
-    margin-left: 20px;
-}
-
-.topScoreName .name {
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(255, 174, 0);
-}
-
-.topScoreName .profesi {
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(138, 138, 138);
-    font-size: 14px
-}
-
-.topScoreTesti {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
+.intro-cta-start:hover, .intro-cta-start:active {
+    background: #ff7a85;
     color: white;
-    font-size: 14px;
+    transition: all 0.75s ease-in-out;
 }
 
-.topScoreDate {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    color: rgb(138, 138, 138);
-    margin-top: 5px
-}
-/* end section kelima */
-
-
-@media only screen and (max-width: 1280px) {
+.intro-cta-learn {
+    border: 1px solid white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
 }
 
-@media only screen and (max-width: 992px) {
-    .textStoryTwo {
-        font-size: 36px;
+.intro-cta-learn:hover, .intro-cta-learn:active {
+    background: white;
+    color: #ff7a85;
+    transition: all 0.75s ease-in-out;
+  }
+
+/* ======================
+======== FOOTER ========
+======================= */
+footer  {
+    background: #25252d;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: calc(100% - 2rem);
+    max-width: 69.875rem;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    padding-top: 4.625rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-wrapper .foot-section {
+    flex: 1;
+}
+
+.footer-wrapper .foot-section-title {
+    margin-bottom: 2.25rem;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-wrapper .foot-section-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 3.375rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #c8c8cb;
+}
+
+.footer-wrapper .foot-section-list .list-item {
+    width: max-content;
+    margin-bottom: 1rem;
+}
+
+a.list-item_link:hover {
+    color: rgb(204, 85, 16);
+    text-decoration: underline;
+}
+
+/* =====================
+===== media minmax =====
+===================== */
+@media (min-width: 800px) {
+    .container {
+        width: calc(100% - 2rem);
+        max-width: 69.875rem;
+        margin: 0 auto;
+        padding: 0;
     }
-}
 
-@media only screen and (max-width: 768px) {
-
-    .storyTwo {
-        flex-direction: column;
+    /* Main */
+    .intro::before {
+        background: linear-gradient(-90deg, #ff3d54, #ff8f70);
     }
 
-    .textStoryTwo {
-        width: 100%;
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 36px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
-    
-    .imageStoryTwo {
-        width: 100%;
-        height: 435px;
-        background-image: url(/asset/rockpaperstrategy-1600.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
+    .intro {
+        padding-top: 14.625rem;
+        /* background-size: 245%; */
         background-size: cover;
+        background-position: 27% 51%;
     }
 
-}
+    .intro-title {
+        font-size: 5rem;
+    }
 
-@media only screen and (max-width: 600px) {
+    /* footer */
+    .footer-wrapper {
+        flex-flow: row nowrap;
+    }
 
+    .footer-wrapper .foot-section-title {
+        text-align: left;
+    }
+
+    .footer-wrapper .foot-section-list {
+        display: block;
+    }
 }
