@@ -5,6 +5,18 @@ html, body, footer {
     font-size: 16px;
     overflow-x: hidden;
   }
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
   
   body {
     position: relative;
@@ -34,11 +46,15 @@ html, body, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8.635rem;
+    width: 10.635rem;
     height: 3rem;
-    border-radius: 1.5rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     transition: all 0.75s ease-in-out;
+}
+
+img {
+    width: 100%;
 }
 
 /* ======================
@@ -49,17 +65,28 @@ html, body, footer {
 /* ======================
 ======== MAIN ========
 ======================= */
+
+/* Global Style for Section */
+#first-section h1.content-title,#second-section h1.content-title,#third-section h1.content-title,#fourth-section h1.content-title,#fifth-section h1.content-title {
+    font-family: 'Bebas Neue', cursive;
+}
+
+#first-section h3.content-title,#second-section h3.content-title,#third-section h3.content-title,#fourth-section h3.content-title,#fifth-section h3.content-title {
+    font-family: 'Open Sans', sans-serif;
+}
+/* End Global Style */
+
 section.intro {
     height: 100vh;
-    padding: 0;
-    position: relative;
+    /* padding-top: 0; */
+    /* position: relative; */
 }
 
 .container-info {
     width: 100%;
     max-width: inherit;
-    margin-top: 40vh;
-    position: absolute;
+    /* margin-top: 40vh; */
+    /* position: absolute; */
 }
 
 .intro::before {
@@ -78,7 +105,7 @@ section.intro {
 .intro {
     position: relative;
     /* border-bottom-left-radius: 5.875rem; */
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     /* background-image: url(/images/bg-pattern-intro.svg); */
     background-image: url(/asset/main-bg.jpg);
     background-repeat: no-repeat;
@@ -92,19 +119,22 @@ section.intro {
 }
 
 .intro-title {
+    font-family: 'Bebas Neue', cursive;
     margin-bottom: 1.5rem;
-    font-size: 2.225rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 2.75rem;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.188rem;
+    line-height: 5rem;
 }
 
 .intro-info {
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 3rem;
     font-size: 1.175rem;
     font-weight: 300;
-    line-height: 1.45rem;
+    line-height: 1.75rem;
     text-align: center;
 }
 
@@ -113,14 +143,14 @@ section.intro {
     max-width: 20.5rem;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 9.6875rem;
+    /* padding-bottom: 9.6875rem; */
     margin: 0 auto;
     font-size: 1.175rem;
 }
 
 .intro-cta-start {
-    background: #f39d32;
-    font-family: "Ubuntu", sans-serif;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     color: #000000;
@@ -128,7 +158,7 @@ section.intro {
 }
 
 .intro-cta-start:hover, .intro-cta-start:active {
-    background: #ff7a85;
+    background: #111111;
     color: white;
     transition: all 0.75s ease-in-out;
 }
@@ -146,6 +176,13 @@ section.intro {
     color: #ff7a85;
     transition: all 0.75s ease-in-out;
   }
+
+.intro-scroll {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
 
 /* ======================
 ======== FOOTER ========
@@ -198,13 +235,33 @@ a.list-item_link:hover {
     text-decoration: underline;
 }
 
+/* First Section */
+#first-section {
+    height: 100vh;
+    /* padding-top: 10rem; */
+    background-image: url(/asset/the-games-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.number-slide {
+    margin-top: -30px;
+}
+
+svg.svg-slide {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 /* =====================
 ===== media minmax =====
 ===================== */
 @media (min-width: 800px) {
     .container {
         width: calc(100% - 2rem);
-        max-width: 69.875rem;
+        /* max-width: 69.875rem; */
         margin: 0 auto;
         padding: 0;
     }
@@ -213,17 +270,7 @@ a.list-item_link:hover {
     .intro::before {
         background: linear-gradient(-90deg, #ff3d54, #ff8f70);
     }
-
-    .intro {
-        padding-top: 14.625rem;
-        /* background-size: 245%; */
-        background-size: cover;
-        background-position: 27% 51%;
-    }
-
-    .intro-title {
-        font-size: 5rem;
-    }
+    
 
     /* footer */
     .footer-wrapper {
@@ -236,5 +283,54 @@ a.list-item_link:hover {
 
     .footer-wrapper .foot-section-list {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .intro-title {
+        font-size: 2.25rem;
+    }
+
+    .intro-info {
+        font-size: 1.10rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .intro-title {
+        font-size: 2.5rem;
+    }
+
+    .intro-info {
+        font-size: 1.15rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .intro-title {
+        font-size: 3.25rem;
+    }
+
+    .intro-info {
+        font-size: 1.20rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .intro-title {
+        font-size: 4.25rem;
+    }
+    .intro-info {
+        font-size: 1.35rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .intro-title {
+        font-size: 5rem;
+    }
+
+    .intro-info {
+        font-size: 1.5rem;
     }
 }
