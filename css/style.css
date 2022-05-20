@@ -69,13 +69,16 @@ img {
 /* Global Style for Section */
 #first-section h1.content-title,#second-section h1.content-title,#third-section h1.content-title,#fourth-section h1.content-title,#fifth-section h1.content-title {
     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.188rem;
 }
 
 #first-section h3.content-title,#second-section h3.content-title,#third-section h3.content-title,#fourth-section h3.content-title,#fifth-section h3.content-title {
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.188rem;
 }
 /* End Global Style */
 
+/* Top Section */
 section.intro {
     height: 100vh;
     /* padding-top: 0; */
@@ -183,6 +186,72 @@ section.intro {
     margin: auto;
     align-items: center;
 }
+/* End Top Section */
+
+/* First Section */
+#first-section {
+    height: 100vh;
+    /* padding-top: 10rem; */
+    background-image: url(/asset/the-games-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.number-slide {
+    margin-top: -30px;
+}
+
+svg.svg-slide {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* End First Section */
+
+/* Second Section */
+#second-section {
+    height: 100vh;
+    /* padding-top: 10rem; */
+    background-image: url(/asset/features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* End Second Section */
+.content-description-svg {
+    margin-right: 2rem;
+}
+
+.content-description-nosvg {
+    border: solid white 1px;
+    margin-left: 7px;
+    margin-top: -7px;
+    margin-bottom: -7px;
+    margin-right: 40px;
+}
+
+.nosvg {
+    height: 100px;
+}
+
+.content-description-title {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFB548;
+    font-weight: 400;
+    font-size: 1.5;
+    line-height: 1.75rem;
+    letter-spacing: 0.125;
+}
+
+.content-description-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 0.75rem;
+}
 
 /* ======================
 ======== FOOTER ========
@@ -235,28 +304,9 @@ a.list-item_link:hover {
     text-decoration: underline;
 }
 
-/* First Section */
-#first-section {
-    height: 100vh;
-    /* padding-top: 10rem; */
-    background-image: url(/asset/the-games-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-.number-slide {
-    margin-top: -30px;
-}
-
-svg.svg-slide {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 /* =====================
-===== media minmax =====
+===== Media Queries =====
 ===================== */
 @media (min-width: 800px) {
     .container {
