@@ -80,7 +80,7 @@ img {
 
 /* Top Section */
 section.intro {
-    height: 100vh;
+    min-height: 100vh;
     /* padding-top: 0; */
     /* position: relative; */
 }
@@ -190,7 +190,7 @@ section.intro {
 
 /* First Section */
 #first-section {
-    height: 100vh;
+    min-height: 100vh;
     /* padding-top: 10rem; */
     background-image: url(/asset/the-games-bg.jpg);
     background-repeat: no-repeat;
@@ -210,14 +210,14 @@ svg.svg-slide {
 
 /* Second Section */
 #second-section {
-    height: 100vh;
+    min-height: 100vh;
     /* padding-top: 10rem; */
     background-image: url(/asset/features.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-/* End Second Section */
+
 .content-description-svg {
     margin-right: 2rem;
 }
@@ -252,6 +252,80 @@ svg.svg-slide {
     font-weight: 100;
     margin-top: 0.75rem;
 }
+/* End Second Section */
+
+/* Third Section */
+#third-section {
+    min-height: 100vh;
+    /* padding-top: 10rem; */
+    background-image: url(/asset/requirements.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#third-section .content-description-subtitle {
+    margin-top: auto!important;
+    margin-bottom: 1rem;
+}
+/* End Third Section */
+
+/* Fourth Section */
+#fourth-section {
+    min-height: 100vh;
+    /* padding-top: 10rem; */
+    background-image: url(/asset/top-score-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.testi-box {
+    background-color: rgba(255, 255, 255, 0.08);;
+    /* border: solid white 1px; */
+    border-radius: 0.357rem;
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+    padding: 2rem;
+}
+
+img.user-photo-img {
+    width: auto!important;
+    border-radius: 50%;
+}
+
+.user-identity {
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.user-identity .user-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #FFB548;
+    text-transform: capitalize;
+}
+
+.user-identity .user-proff, .user-date {
+    font-size: 0.875rem;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.user-social {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.user-testi {
+    font-size: 1.125rem;
+    color: #e0e0e0;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+}
+/* End Fourth Section */
+
 
 /* ======================
 ======== FOOTER ========
