@@ -185,6 +185,9 @@ section.intro {
     flex-direction: column;
     margin: auto;
     align-items: center;
+    position: absolute;
+    width: calc(100% - 4rem);
+    margin-top: 15rem;
 }
 /* End Top Section */
 
